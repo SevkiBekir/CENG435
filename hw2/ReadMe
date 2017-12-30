@@ -1,5 +1,3 @@
-2099513 Barış Yerci
-1869049 Şevki Kocadağ
 README
 	To run this experiment, you need to use Pyton 2.7.6(The version of Inek Machines and GENIPortal have) and PySctp Library for SCTP
     To install pysctp on your computer, we prepared a shell script which is named as "setup.sh"
