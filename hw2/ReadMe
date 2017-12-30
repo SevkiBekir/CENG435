@@ -1,0 +1,36 @@
+2099513 Barış Yerci
+1869049 Şevki Kocadağ
+README
+	To run this experiment, you need to use Pyton 2.7.6(The version of Inek Machines and GENIPortal have) and PySctp Library for SCTP
+    To install pysctp on your computer, we prepared a shell script which is named as "setup.sh"
+    To route data from client to server in routers, you need to route command. We prepared shell scripts which are named as "r1.sh" for Router 1 and "r2.sh" for Router 2 to run easily
+
+    How to run codes:
+    1) Run r1.sh in Router 1 and r2.sh in Router 2
+    2) Run setup.sh
+    3) Go to "pysctp/build/lib.linux-x86_64-2.7/" since kernel module and lib are inside this folder.
+    4) Copy our python files which are related to the mission. For example, for sctp server, it needs "server_sctp.py"
+    5) Run our codes:
+
+        For SCTP:
+            server_sctp.py [experimentNo]
+            client_sctp.py [input file] [experimentNo]
+        Example:
+            server_sctp.py 2
+            client_sctp.py input.txt 2
+
+        For Our RDT:
+            server_rdt.py [experimentNo]
+            client_rdt.py [input file] [experimentNo]
+        Example:
+            server_rdt.py 2
+            client_rdt.py input.txt 2
+
+
+
+
+
+	Note that before running the code, the address information of nodes have to be configured. According to topology which is provided by metu class.
+
+    Generally, to calculate loss packages, corruption and reorder, all packets have to go from source to destination and calculate time, by using final time - starting time.
+    To draw chart, we used LibreOfficeCalc and also all collected data in "data_chart.ods"
